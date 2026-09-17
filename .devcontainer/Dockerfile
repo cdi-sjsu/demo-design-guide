@@ -1,4 +1,4 @@
-FROM verilator/verilator:v5.038@sha256:a9a7ceedff0bf987f8d4dbb83bbd0ef18fc1f203e70ff1e0caa46874113a2da8 AS verilator
+FROM verilator/verilator:v5.052@sha256:a5b73e2fce0b2c483396f3800940f33b6faa802331a061c21694dd27b7352120 AS verilator
 
 FROM mcr.microsoft.com/devcontainers/base:trixie@sha256:b8c3669fb4cc652621b3386517c40ab3e151e827de958d6fe75528798ffb5727
 
