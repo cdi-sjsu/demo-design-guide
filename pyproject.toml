@@ -8,13 +8,13 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "cocotb==2.0.1",
+    "cocotb==2.1.0",
     "edalize==0.6.8",
-    "pytest==8.4.2",
+    "pytest==9.1.1",
     "pyyaml==6.0.3",
-    "ruff==0.13.2",
+    "ruff==0.16.7",
     "vunit-hdl==4.7.1",
-    "yowasp-yosys==0.68.0.0.post1208",
+    "yowasp-yosys==0.69.0.0.post1233",
 ]
 
 [tool.pytest.ini_options]
