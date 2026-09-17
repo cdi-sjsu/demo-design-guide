@@ -1,6 +1,6 @@
 FROM verilator/verilator:v5.038@sha256:a9a7ceedff0bf987f8d4dbb83bbd0ef18fc1f203e70ff1e0caa46874113a2da8 AS verilator
 
-FROM mcr.microsoft.com/devcontainers/base:trixie@sha256:b8c3669fb4cc652621b3386517c40ab3e151e827de958d6fe75528798ffb5727
+FROM mcr.microsoft.com/devcontainers/base:trixie@sha256:1f851004adcd3dff3776b4a1da86727cf52280b0fdc9d5b0568c9c7d74274286
 
 ARG UV_VERSION=0.10.0
 ARG VERIBLE_VERSION=v0.0-4163-g6cce8f19
