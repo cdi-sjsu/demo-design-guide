@@ -1,0 +1,23 @@
+* text=auto eol=lf
+
+# Source and configuration files must use Unix line endings in every checkout.
+*.py text eol=lf
+*.sv text eol=lf
+*.v text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.html text eol=lf
+*.svg text eol=lf
+Makefile text eol=lf
+
+# Generated waveforms and image assets are not subject to text conversion.
+*.vcd binary
+*.fst binary
+*.ghw binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary

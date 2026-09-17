@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "charliermarsh.ruff",
+    "teros-technology.teroshdl",
+    "surfer-project.surfer",
+    "ms-python.python",
+    "ms-python.vscode-pylance"
+  ]
+}

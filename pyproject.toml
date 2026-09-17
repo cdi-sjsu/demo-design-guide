@@ -1,0 +1,33 @@
+[project]
+name = "demo-design-guide"
+version = "0.1.0"
+description = "CDI SJSU Demo Design Guide (Signed Q16.16 SystemVerilog Multiplier)"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "cocotb==2.0.1",
+    "edalize==0.6.8",
+    "pytest==8.4.2",
+    "pyyaml==6.0.3",
+    "ruff==0.13.2",
+    "vunit-hdl==4.7.1",
+    "yowasp-yosys==0.68.0.0.post1208",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = [".", "tests/cocotb"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+respect-gitignore = false
+extend-exclude = [".git", ".sim_build", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]

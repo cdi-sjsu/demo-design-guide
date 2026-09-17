@@ -1,0 +1,15 @@
+# TeroHDL project definition; add new RTL sources to this file list.
+name: q16x16_multiplier
+toplevel: top
+
+files:
+  - name: rtl/full_adder.sv
+    file_type: systemVerilogSource
+  - name: rtl/q16_16_multiplier.sv
+    file_type: systemVerilogSource
+  - name: rtl/ripple_carry_adder.sv
+    file_type: systemVerilogSource
+  - name: rtl/shift_add_multiplier.sv
+    file_type: systemVerilogSource
+  - name: rtl/top.sv
+    file_type: systemVerilogSource

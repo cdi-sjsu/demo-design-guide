@@ -1,0 +1,26 @@
+{
+  "name": "Demo Design Guide",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "mounts": [
+    "source=${devcontainerId}-venv,target=${containerWorkspaceFolder}/.venv,type=volume"
+  ],
+  "remoteEnv": {
+    "PATH": "${containerWorkspaceFolder}/.venv/bin:${containerEnv:PATH}"
+  },
+  "postCreateCommand": "sudo mkdir -p .venv .pytest_cache .ruff_cache .sim_build && sudo chown -R vscode:vscode .venv .pytest_cache .ruff_cache .sim_build && make setup",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "charliermarsh.ruff",
+        "teros-technology.teroshdl@7.0.3",
+        "surfer-project.surfer",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  }
+}

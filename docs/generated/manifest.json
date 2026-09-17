@@ -1,0 +1,127 @@
+{
+  "config": {
+    "path": ".devcontainer/teroshdl-config.json",
+    "sha256": "75ccf640bc8b43536b12f70a02ad445bee3f7d81a25fc0396a8dbe50987ec597"
+  },
+  "generators": [
+    {
+      "path": "tools/generate_docs.py",
+      "sha256": "76c6cc964ad883c9e035a60ba1257853f5a1ab348d4ae712c527655e8a12de4e"
+    },
+    {
+      "path": "tools/hdl_sources.py",
+      "sha256": "9e2f99f421a1dc1fd4f6bd2f1c28364a8fb9019adcd8b73ee41db0a59ca54998"
+    },
+    {
+      "path": "tools/export_teroshdl_docs.js",
+      "sha256": "37c097223b909473833f0c1b603c6da9249e9227a67d82a1f2515a5d9955d3dd"
+    }
+  ],
+  "manifest_version": 2,
+  "source_discovery": {
+    "pattern": "**/*.sv",
+    "root": "rtl"
+  },
+  "sources": [
+    {
+      "design_unit": "full_adder",
+      "outputs": [
+        {
+          "path": "docs/generated/full_adder/README.md",
+          "sha256": "a890eacb89600f2638f4aa16b1650dd0198c6e1c89ee55f8b99caf8b6e9fcc99"
+        },
+        {
+          "path": "docs/generated/full_adder/full_adder.svg",
+          "sha256": "901c34cfba1e66e8581fe2828b7fc73689f317e911439d26c4c889379221f2f2"
+        },
+        {
+          "path": "docs/generated/full_adder/index.html",
+          "sha256": "05e8c2506618d2761781557426482ae5e57a330d6e7bbd38d2d4180cd2e6238d"
+        }
+      ],
+      "path": "rtl/full_adder.sv",
+      "sha256": "d5c0d4f5417cd314f96d6338efef2e8e1107e4b9110dbe913e83bef32d98ff3c"
+    },
+    {
+      "design_unit": "q16_16_multiplier",
+      "outputs": [
+        {
+          "path": "docs/generated/q16_16_multiplier/README.md",
+          "sha256": "066335b6768cd92f6ff1794ddf50a223ec6001b18f45ec76924e9380b6ef256c"
+        },
+        {
+          "path": "docs/generated/q16_16_multiplier/index.html",
+          "sha256": "fbdb893ccd93cffca5d3394f37d1246614b920ea2bd0dabed2c43fda895caae6"
+        },
+        {
+          "path": "docs/generated/q16_16_multiplier/q16_16_multiplier.svg",
+          "sha256": "265fcd883e5c26acac4b4e6ac26ed8760eb9877ba6c6468bdfa39d71ed6c3365"
+        }
+      ],
+      "path": "rtl/q16_16_multiplier.sv",
+      "sha256": "9626a3d3c1a9eb908b9d6308d76b0b7190e7ebbd1371932bb87e9e2779adcebd"
+    },
+    {
+      "design_unit": "ripple_carry_adder",
+      "outputs": [
+        {
+          "path": "docs/generated/ripple_carry_adder/README.md",
+          "sha256": "30aba4f519cdf7741dbd94b82e444c5992fa5c1019d1eb083ba225fa89e21385"
+        },
+        {
+          "path": "docs/generated/ripple_carry_adder/index.html",
+          "sha256": "c1e3dec524727d3640191ef1d44a91915ed920cf2f8dd7dc060164ad8e745c91"
+        },
+        {
+          "path": "docs/generated/ripple_carry_adder/ripple_carry_adder.svg",
+          "sha256": "10156959bda055c3ce1a95ea459545163bbc68a3e714f9344a188ef8410fe884"
+        }
+      ],
+      "path": "rtl/ripple_carry_adder.sv",
+      "sha256": "450578d310e6bcec9c3ff04ef88d8a0cc36cbaf097b8cb9771f062fd70a4df0c"
+    },
+    {
+      "design_unit": "shift_add_multiplier",
+      "outputs": [
+        {
+          "path": "docs/generated/shift_add_multiplier/README.md",
+          "sha256": "51bba36c8dc961230003d37296ea38b535c1cc730dcd2819c7be187a69fed269"
+        },
+        {
+          "path": "docs/generated/shift_add_multiplier/fsm_shift_add_multiplier_00.svg",
+          "sha256": "1df291194a24a6ef3ce3766629442a3773a424375f353290d084b9d685c42cef"
+        },
+        {
+          "path": "docs/generated/shift_add_multiplier/index.html",
+          "sha256": "06564167d443efe04542985facc356141f103385f1c6815e546c7a826749dbed"
+        },
+        {
+          "path": "docs/generated/shift_add_multiplier/shift_add_multiplier.svg",
+          "sha256": "1ea1c7b743def3c8962db2abd10ec4d7bef91bbcc6805f916ff8b7755dc8e415"
+        }
+      ],
+      "path": "rtl/shift_add_multiplier.sv",
+      "sha256": "9682450af6839f6e05ccd8d3199f3765f77bb41b95a0226c6c79f2fd30652953"
+    },
+    {
+      "design_unit": "top",
+      "outputs": [
+        {
+          "path": "docs/generated/top/README.md",
+          "sha256": "772a464e74297b0d64a71d27fae40d69b1c6b0910de9752b29a4354eca34b912"
+        },
+        {
+          "path": "docs/generated/top/index.html",
+          "sha256": "73f85b68ce6602fe4e6a4d656e84c5cb92eeac51f8159c22514da9d52b564312"
+        },
+        {
+          "path": "docs/generated/top/top.svg",
+          "sha256": "6bb46ab3b3ec432b0116a284d1bb307f8db6e41ca8aedc2a04482a0ee924c0b7"
+        }
+      ],
+      "path": "rtl/top.sv",
+      "sha256": "6ff049820bebc4fad5086a604a5c1b0af888417d6894ee00a8ec2673c7fc892e"
+    }
+  ],
+  "teroshdl_version": "7.0.3"
+}

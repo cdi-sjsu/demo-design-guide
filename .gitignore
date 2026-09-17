@@ -1,0 +1,35 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Python and tooling
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# cocotb and simulator artifacts
+.sim_build/
+sim_build/
+results.xml
+*.result.xml
+*.vcd
+*.fst
+*.ghw
+*.vvp
+dump.vcd
+transcript
+
+# FPGA tool artifacts and local projects
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+*.xpr
+*.jou
+*.log
+*.str

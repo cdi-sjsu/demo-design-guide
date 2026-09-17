@@ -1,0 +1,29 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/tests"
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+  "teroshdl.formatter.verilog.formatter": "Verible",
+  "teroshdl.linter.verilog.linter": "Verilator",
+  "teroshdl.tools.verible.path": "/usr/local/bin",
+  "teroshdl.tools.verilator.path": "/usr/local/bin",
+  "systemverilog.includeIndexing": [
+    "rtl/**/*.sv"
+  ],
+  "[systemverilog]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "files.exclude": {
+    "**/.venv": true
+  }
+}
