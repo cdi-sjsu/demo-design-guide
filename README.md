@@ -60,3 +60,8 @@ The Dev Container includes TeroHDL and its dependencies. To load the design into
    files appear under **Files**, and `top` appears as the selected top level under **Hierarchy**.
 6. Open the **Dependency Viewer** to see the complete module hierarchy from `top` through
    `full_adder`.
+
+## Contributing
+
+See the [CDI contributor guide](https://github.com/cdi-sjsu/.github/blob/main/CONTRIBUTING.md)
+for repository access, pull requests, and Windows/macOS Git signing setup.
